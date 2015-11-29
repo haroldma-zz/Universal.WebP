@@ -63,11 +63,10 @@ namespace WebP.Universal.Extensions
                     arr = new byte[stream.Length];
                     await stream.ReadAsync(arr, 0, arr.Length);
                 }
-
-                var webp = new WebPDecoder();
-
+                
                 try
                 {
+                    var webp = new WebPDecoder();
                     var size = await webp.GetSizeAsync(arr);
                     var pixelData = await webp.DecodeBgraAsync(arr);
                     var wb = new WriteableBitmap((int) size.Width, (int) size.Height);

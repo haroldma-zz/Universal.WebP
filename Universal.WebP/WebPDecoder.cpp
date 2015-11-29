@@ -6,7 +6,7 @@ extern "C" {
 	#include <webp/decode.h>
 }
 
-using namespace WebP::Universal;
+using namespace Universal::WebP;
 using namespace Platform;
 
 using namespace concurrency;

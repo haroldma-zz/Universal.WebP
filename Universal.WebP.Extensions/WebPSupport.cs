@@ -8,7 +8,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 
-namespace WebP.Universal.Extensions
+namespace Universal.WebP.Extensions
 {
     public static class WebPSupport
     {

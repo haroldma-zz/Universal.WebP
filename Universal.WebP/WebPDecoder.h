@@ -1,8 +1,8 @@
 ﻿#pragma once
 
-namespace WebP
+namespace Universal
 {
-	namespace Universal 
+	namespace WebP
 	{
 		public ref class WebPDecoder sealed
 		{

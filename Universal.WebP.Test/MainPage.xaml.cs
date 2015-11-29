@@ -1,6 +1,6 @@
 ﻿using Windows.UI.Xaml.Controls;
 
-namespace WebP.Universal.Test
+namespace Universal.WebP.Test
 {
     /// <summary>
     ///     An empty page that can be used on its own or navigated to within a Frame.

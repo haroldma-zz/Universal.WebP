@@ -1,11 +1,10 @@
 ﻿<Page
-    x:Class="WebP.Universal.Test.MainPage"
+    x:Class="Universal.WebP.Test.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:WebP.Universal.Test"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:extensions="using:WebP.Universal.Extensions"
+    xmlns:extensions="using:Universal.WebP.Extensions"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

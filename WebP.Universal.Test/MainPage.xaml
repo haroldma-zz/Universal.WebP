@@ -5,6 +5,7 @@
     xmlns:local="using:WebP.Universal.Test"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:extensions="using:WebP.Universal.Extensions"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -12,7 +13,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Image x:Name="WebPImage" Stretch="Uniform" local:WebPSupport.Source="http://www.gstatic.com/webp/gallery/5.webp" />
-        <Image Grid.Column="1" Stretch="Uniform" local:WebPSupport.Source="/Assets/waterski2.webp" />
+        <Image x:Name="WebPImage" Stretch="Uniform" extensions:WebPSupport.Source="http://www.gstatic.com/webp/gallery/5.webp" />
+        <Image Grid.Column="1" Stretch="Uniform" extensions:WebPSupport.Source="/Assets/waterski2.webp" />
     </Grid>
 </Page>

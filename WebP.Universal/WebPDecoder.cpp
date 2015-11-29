@@ -29,7 +29,6 @@ IAsyncOperation<Size>^  WebPDecoder::GetSizeAsync(const Array<byte>^ input) {
 
 IAsyncOperation<IBuffer^>^ WebPDecoder::DecodeBgraAsync(const Array<byte>^ input) {
 	return create_async([=]() -> IBuffer^ {
-
 		int w, h;
 		auto data = WebPDecodeBGRA(input->Data, input->Length, &w, &h);
 		auto data_size = w*h*sizeof(uint8_t) * 4;
@@ -43,7 +42,6 @@ IAsyncOperation<IBuffer^>^ WebPDecoder::DecodeBgraAsync(const Array<byte>^ input
 
 IAsyncOperation<IBuffer^>^ WebPDecoder::DecodeRgbaAsync(const Array<byte>^ input) {
 	return create_async([=]() -> IBuffer^ {
-
 		int w, h;
 		auto data = WebPDecodeRGBA(input->Data, input->Length, &w, &h);
 		auto data_size = w*h*sizeof(uint8_t) * 4;
@@ -57,7 +55,6 @@ IAsyncOperation<IBuffer^>^ WebPDecoder::DecodeRgbaAsync(const Array<byte>^ input
 
 IAsyncOperation<IBuffer^>^ WebPDecoder::DecodeArgbAsync(const Array<byte>^ input) {
 	return create_async([=]() -> IBuffer^ {
-
 		int w, h;
 		auto data = WebPDecodeARGB(input->Data, input->Length, &w, &h);
 		auto data_size = w*h*sizeof(uint8_t) * 4;
@@ -71,7 +68,6 @@ IAsyncOperation<IBuffer^>^ WebPDecoder::DecodeArgbAsync(const Array<byte>^ input
 
 IAsyncOperation<IBuffer^>^ WebPDecoder::DecodeBgrAsync(const Array<byte>^ input) {
 	return create_async([=]() -> IBuffer^ {
-
 		int w, h;
 		auto data = WebPDecodeBGR(input->Data, input->Length, &w, &h);
 		auto data_size = w*h*sizeof(uint8_t) * 3;
@@ -85,7 +81,6 @@ IAsyncOperation<IBuffer^>^ WebPDecoder::DecodeBgrAsync(const Array<byte>^ input)
 
 IAsyncOperation<IBuffer^>^ WebPDecoder::DecodeRgbAsync(const Array<byte>^ input) {
 	return create_async([=]() -> IBuffer^ {
-
 		int w, h;
 		auto data = WebPDecodeRGB(input->Data, input->Length, &w, &h);
 		auto data_size = w*h*sizeof(uint8_t) * 3;

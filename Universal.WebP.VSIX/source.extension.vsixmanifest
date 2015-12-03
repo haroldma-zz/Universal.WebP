@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Universal.WebP" Version="1.0" Language="en-US" Publisher="Zumicts" />
+    <DisplayName>WebP for the UWP</DisplayName>
+    <Description xml:space="preserve">WebP image library for Windows 10 (Universal apps)</Description>
+    <Tags>google, webp, image, webp decoder</Tags>
+  </Metadata>
+  <Installation AllUsers="true" Scope="Global">
+    <InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="UAP" TargetPlatformVersion="v0.8.0.0" SdkName="WebP for the UWP" SdkVersion="1.0" />
+  </Installation>
+  <Assets>
+    <Asset Type="Microsoft.ExtensionSDK" Path="SDKManifest.xml" />
+  </Assets>
+</PackageManifest>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PackageConfiguration Condition="'$(Configuration)' == ''">Debug</PackageConfiguration>
+    <PackageConfiguration Condition="'$(Configuration)' == 'Debug'">Debug</PackageConfiguration>
+    <PackageConfiguration Condition="'$(Configuration)' == 'Release'">Retail</PackageConfiguration>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(FrameworkSDKRoot)\..\..\UAP\v0.8.0.0\ExtensionSDKs\Universal.WebP\1.0\DesignTime\CommonConfiguration\Neutral\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(FrameworkSDKRoot)\..\..\UAP\v0.8.0.0\ExtensionSDKs\Universal.WebP\1.0\DesignTime\$(PackageConfiguration)\$(PlatformTarget);$(LibraryPath)</LibraryPath>
+    <PropertySheetDisplayName>Universal.WebP, 1.0</PropertySheetDisplayName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>Universal.WebP.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

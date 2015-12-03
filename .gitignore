@@ -197,3 +197,8 @@ FakesAssemblies/
 
 # Windows 10 project lock file
 *.lock.json
+Universal.WebP.VSIX/DesignTime/CommonConfiguration/neutral/Include/WebPDecoder.h
+Universal.WebP.VSIX/Redist/Retail/ARM/Universal.WebP.dll
+Universal.WebP.VSIX/DesignTime/Retail/ARM/Universal.WebP.lib
+Universal.WebP.VSIX/References/CommonConfiguration/ARM/Universal.WebP.pri
+Universal.WebP.VSIX/References/CommonConfiguration/ARM/Universal.WebP.winmd

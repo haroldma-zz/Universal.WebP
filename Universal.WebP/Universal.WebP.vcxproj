@@ -151,6 +151,12 @@
       <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(TargetDir)Universal.WebP.lib $(SolutionDir)Universal.WebP.VSIX\DesignTime\Debug\$(PlatformTarget)\ /y /f /e
+xcopy $(SolutionDir)Universal.WebP\WebPDecoder.h $(SolutionDir)Universal.WebP.VSIX\DesignTime\CommonConfiguration\neutral\Include /y /f /e
+xcopy $(TargetDir)Universal.WebP.dll $(SolutionDir)Universal.WebP.VSIX\Redist\Debug\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.pdb $(SolutionDir)Universal.WebP.VSIX\Redist\Debug\$(PlatformTarget)\ /y /f /e</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -168,6 +174,14 @@
       <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(TargetDir)Universal.WebP.lib $(SolutionDir)Universal.WebP.VSIX\DesignTime\Retail\$(PlatformTarget)\ /y /f /e
+xcopy $(SolutionDir)Universal.WebP\WebPDecoder.h $(SolutionDir)Universal.WebP.VSIX\DesignTime\CommonConfiguration\neutral\Include /y /f /e
+xcopy $(TargetDir)Universal.WebP.dll $(SolutionDir)Universal.WebP.VSIX\Redist\Retail\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.pdb $(SolutionDir)Universal.WebP.VSIX\Redist\Retail\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.pri $(SolutionDir)Universal.WebP.VSIX\References\CommonConfiguration\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.winmd $(SolutionDir)Universal.WebP.VSIX\References\CommonConfiguration\$(PlatformTarget)\ /y /f /e</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
@@ -185,6 +199,12 @@
       <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(TargetDir)Universal.WebP.lib $(SolutionDir)Universal.WebP.VSIX\DesignTime\Debug\$(PlatformTarget)\ /y /f /e
+xcopy $(SolutionDir)Universal.WebP\WebPDecoder.h $(SolutionDir)Universal.WebP.VSIX\DesignTime\CommonConfiguration\neutral\Include /y /f /e
+xcopy $(TargetDir)Universal.WebP.dll $(SolutionDir)Universal.WebP.VSIX\Redist\Debug\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.pdb $(SolutionDir)Universal.WebP.VSIX\Redist\Debug\$(PlatformTarget)\ /y /f /e</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
@@ -202,6 +222,14 @@
       <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(TargetDir)Universal.WebP.lib $(SolutionDir)Universal.WebP.VSIX\DesignTime\Retail\$(PlatformTarget)\ /y /f /e
+xcopy $(SolutionDir)Universal.WebP\WebPDecoder.h $(SolutionDir)Universal.WebP.VSIX\DesignTime\CommonConfiguration\neutral\Include /y /f /e
+xcopy $(TargetDir)Universal.WebP.dll $(SolutionDir)Universal.WebP.VSIX\Redist\Retail\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.pdb $(SolutionDir)Universal.WebP.VSIX\Redist\Retail\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.pri $(SolutionDir)Universal.WebP.VSIX\References\CommonConfiguration\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.winmd $(SolutionDir)Universal.WebP.VSIX\References\CommonConfiguration\$(PlatformTarget)\ /y /f /e</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -219,6 +247,12 @@
       <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(TargetDir)Universal.WebP.lib $(SolutionDir)Universal.WebP.VSIX\DesignTime\Debug\$(PlatformTarget)\ /y /f /e
+xcopy $(SolutionDir)Universal.WebP\WebPDecoder.h $(SolutionDir)Universal.WebP.VSIX\DesignTime\CommonConfiguration\neutral\Include /y /f /e
+xcopy $(TargetDir)Universal.WebP.dll $(SolutionDir)Universal.WebP.VSIX\Redist\Debug\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.pdb $(SolutionDir)Universal.WebP.VSIX\Redist\Debug\$(PlatformTarget)\ /y /f /e</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -236,6 +270,14 @@
       <AdditionalDependencies>runtimeobject.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(TargetDir)Universal.WebP.lib $(SolutionDir)Universal.WebP.VSIX\DesignTime\Retail\$(PlatformTarget)\ /y /f /e
+xcopy $(SolutionDir)Universal.WebP\WebPDecoder.h $(SolutionDir)Universal.WebP.VSIX\DesignTime\CommonConfiguration\neutral\Include /y /f /e
+xcopy $(TargetDir)Universal.WebP.dll $(SolutionDir)Universal.WebP.VSIX\Redist\Retail\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.pdb $(SolutionDir)Universal.WebP.VSIX\Redist\Retail\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.pri $(SolutionDir)Universal.WebP.VSIX\References\CommonConfiguration\$(PlatformTarget)\ /y /f /e
+xcopy $(TargetDir)Universal.WebP.winmd $(SolutionDir)Universal.WebP.VSIX\References\CommonConfiguration\$(PlatformTarget)\ /y /f /e</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

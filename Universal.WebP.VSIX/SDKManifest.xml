@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileList
+    Identity = "Universal.WebP, Version=1.0"
+    DisplayName = "WebP for the UWP"
+    MinVSVersion="14.0"
+    AppliesTo="WindowsAppContainer"
+    DependsOn="Microsoft.VCLibs, version=14.0"
+    TargetFramework=".NETCore, version=v4.5.3;"
+    SupportsMultipleVersions="Error"
+    SupportedArchitectures="x86;x64;ARM">
+	<File Reference="Universal.WebP.winmd" Implementation="Universal.WebP.dll" />
+</FileList>

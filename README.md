@@ -1,35 +1,9 @@
 # WebP for the Universal Windows Platform
 WebP image library for Windows 10 (Universal apps)
 
-## How-To
+## Wiki
 
-### Display image programatically
-
-    // Download webp image
-    var bytes = await new HttpClient().GetByteArrayAsync("http://www.gstatic.com/webp/gallery/5.webp");
-    
-    // Create an instance of the decoder
-    var webp = new WebPDecoder();
-    
-    // Decode to BGRA (Bitmaps use this format)
-    var pixelData = (await webp.DecodeBgraAsync(bytes)).ToArray();
-    
-    // Get the size
-    var size = await webp.GetSizeAsync(bytes);
-    
-    // With the size of the webp, create a WriteableBitmap
-    var bitmap = new WriteableBitmap((int) size.Width, (int) size.Height);
-    
-    // Write the pixel data to the buffer
-    var stream = bitmap.PixelBuffer.AsStream();
-    await stream.WriteAsync(pixelData, 0, pixelData.Length);
-    
-    // Set the bitmap
-    ImageControl.Source = bitmap;
-
-### Display image utilizing the attached property in Xaml
-
-    // TODO
+Cheack out [the wiki](https://github.com/zumicts/Universal.WebP/wiki) for documentation and code samples.
 
 ## Visual Studio Extension
 

@@ -17,6 +17,10 @@ using namespace Windows::Storage::Streams;
 WebPDecoder::WebPDecoder() {
 }
 
+int WebPDecoder::GetDecoderVersion() {
+	return WebPGetDecoderVersion();
+}
+
 IAsyncOperation<Size>^  WebPDecoder::GetSizeAsync(const Array<byte>^ input) {
 	return create_async([=]() -> Size {
 		int w, h;

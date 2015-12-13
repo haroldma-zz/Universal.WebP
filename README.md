@@ -3,7 +3,7 @@ WebP image library for Windows 10 (Universal apps)
 
 ## Wiki
 
-Cheack out [the wiki](https://github.com/zumicts/Universal.WebP/wiki) for documentation and code samples.
+Check out [the wiki](https://github.com/zumicts/Universal.WebP/wiki) for documentation and code samples.
 
 ## Visual Studio Extension
 
